@@ -1,0 +1,10 @@
+
+services:
+  - type: worker
+    name: bot-nequi
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python comprobante_telegram.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: PON_AQUI_TU_TOKEN_DEL_BOT
